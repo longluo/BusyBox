@@ -1,0 +1,3 @@
+#!/bin/sh
+python -c "import os;import urllib2;import qrcode;img=qrcode.make('$1');img.save(os.path.expanduser('~/tmp/txt2qrcode.png'));"
+fcp ~/tmp/txt2qrcode.png
